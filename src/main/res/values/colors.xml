@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="toaster_background">#616161</color>
+    <color name="toaster_text">#fff</color>
+    <color name="color_accent">#f00</color>
+
+    <color name="info">#2c87bf</color>
+    <color name="error">#c20505</color>
+    <color name="done">#00b100</color>
+</resources>
