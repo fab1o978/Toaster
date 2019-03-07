@@ -19,7 +19,7 @@ public final class R {
         public static int fontStyle = 0x7f04007c;
         public static int fontVariationSettings = 0x7f04007d;
         public static int fontWeight = 0x7f04007e;
-        public static int ttcIndex = 0x7f040104;
+        public static int ttcIndex = 0x7f040105;
     }
     public static final class color {
         public static int notification_action_color_filter = 0x7f060041;
@@ -115,8 +115,8 @@ public final class R {
         public static int TextAppearance_Compat_Notification_Line2 = 0x7f1600ee;
         public static int TextAppearance_Compat_Notification_Time = 0x7f1600ef;
         public static int TextAppearance_Compat_Notification_Title = 0x7f1600f0;
-        public static int Widget_Compat_NotificationActionContainer = 0x7f160158;
-        public static int Widget_Compat_NotificationActionText = 0x7f160159;
+        public static int Widget_Compat_NotificationActionContainer = 0x7f160159;
+        public static int Widget_Compat_NotificationActionText = 0x7f16015a;
     }
     public static final class styleable {
         public static int[] ColorStateListItem = { 0x7f040028, 0x0101031f, 0x010101a5 };
@@ -130,7 +130,7 @@ public final class R {
         public static int FontFamily_fontProviderFetchTimeout = 3;
         public static int FontFamily_fontProviderPackage = 4;
         public static int FontFamily_fontProviderQuery = 5;
-        public static int[] FontFamilyFont = { 0x01010532, 0x0101053f, 0x01010570, 0x01010533, 0x0101056f, 0x7f040074, 0x7f04007c, 0x7f04007d, 0x7f04007e, 0x7f040104 };
+        public static int[] FontFamilyFont = { 0x01010532, 0x0101053f, 0x01010570, 0x01010533, 0x0101056f, 0x7f040074, 0x7f04007c, 0x7f04007d, 0x7f04007e, 0x7f040105 };
         public static int FontFamilyFont_android_font = 0;
         public static int FontFamilyFont_android_fontStyle = 1;
         public static int FontFamilyFont_android_fontVariationSettings = 2;

@@ -23,6 +23,10 @@
     <color name="info">#2c87bf</color>
     <color name="toaster_background">#616161</color>
     <color name="toaster_text">#fff</color>
+    <declare-styleable name="Toaster"><attr format="dimension" name="toaster_marginBottom"/></declare-styleable>
     <dimen name="toaster_padding">8dp</dimen>
     <string name="app_name">Toaster</string>
+    <style name="Toaster">
+        <item name="toaster_marginBottom">100px</item>
+    </style>
 </resources>
