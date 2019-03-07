@@ -27,7 +27,6 @@
         android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/comfortaa"
         android:padding="@dimen/toaster_padding"
         android:textColor="@color/toaster_text"
         android:layout_gravity="center_vertical"

@@ -6,5 +6,6 @@
         <item name="toaster_errorColor">@color/error</item>
         <item name="toaster_warningColor">@color/warning</item>
         <item name="toaster_completedColor">@color/completed</item>
+        <item name="toaster_fontFamily">@font/comfortaa</item>
     </style>
 </resources>

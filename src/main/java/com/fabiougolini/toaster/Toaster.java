@@ -4,7 +4,9 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.PorterDuff;
+import android.graphics.Typeface;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -43,19 +45,12 @@ public class Toaster extends Toast {
         showMessage(context, message, R.drawable.ic_warning_black_24dp, getBackgroundColor(context, ToastType.WARNING));
     }
 
-    private enum ToastType {
-        INFO,
-        WARNING,
-        ERROR,
-        COMPLETED
-    }
-
-    private static int getBackgroundColor(Context context, ToastType type){
+    private static int getBackgroundColor(Context context, ToastType type) {
         int color = 0;
 
         TypedArray typedArray = context.obtainStyledAttributes(R.style.Toaster, R.styleable.Toaster);
 
-        switch(type){
+        switch (type) {
             case INFO:
                 color = typedArray.getColor(R.styleable.Toaster_toaster_infoColor, context.getResources().getColor(R.color.info, null));
                 break;
@@ -76,6 +71,7 @@ public class Toaster extends Toast {
     }
 
     public static void showMessage(Context context, String message, @Nullable int icon, @Nullable int backgroundColor) {
+
         Toaster t = new Toaster(context);
         LayoutInflater inflater = ((Activity) context).getLayoutInflater();
         View layout = inflater.inflate((R.layout.toaster), (ViewGroup) ((Activity) context).findViewById(R.id.toast_layout_root));
@@ -115,6 +111,13 @@ public class Toaster extends Toast {
         layout = inflater.inflate((R.layout.toaster), (ViewGroup) ((Activity) context).findViewById(R.id.toast_layout_root));
 
         ctv_message = layout.findViewById(R.id.text);
+        // ctv_message.setTypeface(Typeface.createFromAsset(context.getAssets(), "font/comfortaa"));
+
+        try {
+            ctv_message.setTypeface(typedArray.getFont(R.styleable.Toaster_toaster_fontFamily));
+        } catch (Exception e) {
+            Log.e("Toaster", e.getMessage());
+        }
 
         this.setGravity(Gravity.BOTTOM, 0, marginBottom);
         this.setDuration(Toast.LENGTH_LONG);
@@ -135,5 +138,12 @@ public class Toaster extends Toast {
     public void setBackgroundColor(int backgroundColor) {
         this.backgroundColor = backgroundColor;
         layout.getRootView().setBackgroundColor(backgroundColor);
+    }
+
+    private enum ToastType {
+        INFO,
+        WARNING,
+        ERROR,
+        COMPLETED
     }
 }

@@ -6,5 +6,6 @@
         <attr name="toaster_infoColor" format="color" />
         <attr name="toaster_errorColor" format="color" />
         <attr name="toaster_completedColor" format="color" />
+        <attr name="toaster_fontFamily" format="reference" />
     </declare-styleable>
 </resources>
