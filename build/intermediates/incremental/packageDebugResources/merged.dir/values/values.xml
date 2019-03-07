@@ -18,15 +18,20 @@
         <item>@font/montserrat</item>
     </array>
     <color name="color_accent">#f00</color>
-    <color name="done">#00b100</color>
+    <color name="completed">#00b100</color>
     <color name="error">#c20505</color>
     <color name="info">#2c87bf</color>
     <color name="toaster_background">#616161</color>
     <color name="toaster_text">#fff</color>
-    <declare-styleable name="Toaster"><attr format="dimension" name="toaster_marginBottom"/></declare-styleable>
+    <color name="warning">#ff6f00</color>
+    <declare-styleable name="Toaster"><attr format="dimension" name="toaster_marginBottom"/><attr format="color" name="toaster_warningColor"/><attr format="color" name="toaster_infoColor"/><attr format="color" name="toaster_errorColor"/><attr format="color" name="toaster_completedColor"/></declare-styleable>
     <dimen name="toaster_padding">8dp</dimen>
     <string name="app_name">Toaster</string>
     <style name="Toaster">
         <item name="toaster_marginBottom">100px</item>
+        <item name="toaster_infoColor">@color/info</item>
+        <item name="toaster_errorColor">@color/error</item>
+        <item name="toaster_warningColor">@color/warning</item>
+        <item name="toaster_completedColor">@color/completed</item>
     </style>
 </resources>

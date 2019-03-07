@@ -2,5 +2,9 @@
 <resources>
     <declare-styleable name="Toaster">
         <attr name="toaster_marginBottom" format="dimension" />
+        <attr name="toaster_warningColor" format="color" />
+        <attr name="toaster_infoColor" format="color" />
+        <attr name="toaster_errorColor" format="color" />
+        <attr name="toaster_completedColor" format="color" />
     </declare-styleable>
 </resources>

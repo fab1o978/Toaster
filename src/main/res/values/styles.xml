@@ -2,5 +2,9 @@
 <resources>
     <style name="Toaster">
         <item name="toaster_marginBottom">100px</item>
+        <item name="toaster_infoColor">@color/info</item>
+        <item name="toaster_errorColor">@color/error</item>
+        <item name="toaster_warningColor">@color/warning</item>
+        <item name="toaster_completedColor">@color/completed</item>
     </style>
 </resources>

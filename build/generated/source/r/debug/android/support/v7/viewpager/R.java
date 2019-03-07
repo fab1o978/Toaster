@@ -19,7 +19,7 @@ public final class R {
         public static int fontStyle = 0x7f04007c;
         public static int fontVariationSettings = 0x7f04007d;
         public static int fontWeight = 0x7f04007e;
-        public static int ttcIndex = 0x7f040105;
+        public static int ttcIndex = 0x7f040109;
     }
     public static final class color {
         public static int notification_action_color_filter = 0x7f060041;
@@ -52,18 +52,18 @@ public final class R {
         public static int notification_top_pad_large_text = 0x7f08006a;
     }
     public static final class drawable {
-        public static int notification_action_background = 0x7f090058;
-        public static int notification_bg = 0x7f090059;
-        public static int notification_bg_low = 0x7f09005a;
-        public static int notification_bg_low_normal = 0x7f09005b;
-        public static int notification_bg_low_pressed = 0x7f09005c;
-        public static int notification_bg_normal = 0x7f09005d;
-        public static int notification_bg_normal_pressed = 0x7f09005e;
-        public static int notification_icon_background = 0x7f09005f;
-        public static int notification_template_icon_bg = 0x7f090060;
-        public static int notification_template_icon_low_bg = 0x7f090061;
-        public static int notification_tile_bg = 0x7f090062;
-        public static int notify_panel_notification_icon_bg = 0x7f090063;
+        public static int notification_action_background = 0x7f090059;
+        public static int notification_bg = 0x7f09005a;
+        public static int notification_bg_low = 0x7f09005b;
+        public static int notification_bg_low_normal = 0x7f09005c;
+        public static int notification_bg_low_pressed = 0x7f09005d;
+        public static int notification_bg_normal = 0x7f09005e;
+        public static int notification_bg_normal_pressed = 0x7f09005f;
+        public static int notification_icon_background = 0x7f090060;
+        public static int notification_template_icon_bg = 0x7f090061;
+        public static int notification_template_icon_low_bg = 0x7f090062;
+        public static int notification_tile_bg = 0x7f090063;
+        public static int notify_panel_notification_icon_bg = 0x7f090064;
     }
     public static final class id {
         public static int action_container = 0x7f0c0008;
@@ -130,7 +130,7 @@ public final class R {
         public static int FontFamily_fontProviderFetchTimeout = 3;
         public static int FontFamily_fontProviderPackage = 4;
         public static int FontFamily_fontProviderQuery = 5;
-        public static int[] FontFamilyFont = { 0x01010532, 0x0101053f, 0x01010570, 0x01010533, 0x0101056f, 0x7f040074, 0x7f04007c, 0x7f04007d, 0x7f04007e, 0x7f040105 };
+        public static int[] FontFamilyFont = { 0x01010532, 0x0101053f, 0x01010570, 0x01010533, 0x0101056f, 0x7f040074, 0x7f04007c, 0x7f04007d, 0x7f04007e, 0x7f040109 };
         public static int FontFamilyFont_android_font = 0;
         public static int FontFamilyFont_android_fontStyle = 1;
         public static int FontFamilyFont_android_fontVariationSettings = 2;

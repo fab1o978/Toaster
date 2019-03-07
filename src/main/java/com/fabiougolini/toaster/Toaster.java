@@ -28,15 +28,51 @@ public class Toaster extends Toast {
     }
 
     public static void done(Context context, String message) {
-        showMessage(context, message, R.drawable.ic_done_black_24dp, context.getResources().getColor(R.color.done, null));
+        showMessage(context, message, R.drawable.ic_done_black_24dp, getBackgroundColor(context, ToastType.COMPLETED));
     }
 
     public static void info(Context context, String message) {
-        showMessage(context, message, R.drawable.ic_info_black_24dp, context.getResources().getColor(R.color.info, null));
+        showMessage(context, message, R.drawable.ic_info_black_24dp, getBackgroundColor(context, ToastType.INFO));
     }
 
     public static void error(Context context, String message) {
-        showMessage(context, message, R.drawable.ic_close_black_24dp, context.getResources().getColor(R.color.error, null));
+        showMessage(context, message, R.drawable.ic_close_black_24dp, getBackgroundColor(context, ToastType.ERROR));
+    }
+
+    public static void warning(Context context, String message) {
+        showMessage(context, message, R.drawable.ic_warning_black_24dp, getBackgroundColor(context, ToastType.WARNING));
+    }
+
+    private enum ToastType {
+        INFO,
+        WARNING,
+        ERROR,
+        COMPLETED
+    }
+
+    private static int getBackgroundColor(Context context, ToastType type){
+        int color = 0;
+
+        TypedArray typedArray = context.obtainStyledAttributes(R.style.Toaster, R.styleable.Toaster);
+
+        switch(type){
+            case INFO:
+                color = typedArray.getColor(R.styleable.Toaster_toaster_infoColor, context.getResources().getColor(R.color.info, null));
+                break;
+            case WARNING:
+                color = typedArray.getColor(R.styleable.Toaster_toaster_warningColor, context.getResources().getColor(R.color.warning, null));
+                break;
+            case ERROR:
+                color = typedArray.getColor(R.styleable.Toaster_toaster_errorColor, context.getResources().getColor(R.color.error, null));
+                break;
+            case COMPLETED:
+                color = typedArray.getColor(R.styleable.Toaster_toaster_completedColor, context.getResources().getColor(R.color.completed, null));
+                break;
+        }
+
+        typedArray.recycle();
+
+        return color;
     }
 
     public static void showMessage(Context context, String message, @Nullable int icon, @Nullable int backgroundColor) {

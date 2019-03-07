@@ -6,5 +6,6 @@
 
     <color name="info">#2c87bf</color>
     <color name="error">#c20505</color>
-    <color name="done">#00b100</color>
+    <color name="completed">#00b100</color>
+    <color name="warning">#ff6f00</color>
 </resources>
